@@ -1,0 +1,90 @@
+
+
+
+body{
+    background-image:url(/images/body.png);
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+.card{
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55rem;
+    background-color: rgb(255, 253, 244);
+    border-radius: 6px;
+    margin-bottom: 3rem;
+}
+
+#usr-pic{
+    object-fit: cover;
+    border-radius:6px ;
+    width: 70%;
+    height: 70%;
+}
+
+#usrpic-container{
+    width: 14rem;
+    height: auto;
+    text-align: left;
+    padding-top:6px;
+}
+
+.header-outer{
+    width:100%;
+    text-align: left;
+    vertical-align: top;
+}
+.header-inner{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#contacts{
+    list-style-type: none;
+    padding-top: 0px;
+    padding-left: 0;
+    
+}
+
+.badge {
+    background-color: rgb(110, 108, 108);
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight:normal;
+    font-size: 11pt;
+  }
+
+#charge-li{
+    padding-left: 18px;
+}
+
+
+.main_view{
+    width: 65%;
+    height: 65%;
+    justify-content: center;
+}
+.main_view img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+.side_view{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.side_view img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    cursor: pointer;
+    margin:0.5rem;
+}
