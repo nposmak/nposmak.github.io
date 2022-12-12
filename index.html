@@ -4,13 +4,22 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NPosmak</title>
+
+    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/mystyle.css">
+    
 </head>
 <body>
+  <div class="langs">
+    <a href="#" class="active" id ="switch" language="russian">РУС</a>
+    <a href="#"  id ="switch" language="english">ENG</a>  
+  </div>
+
     
 
         <div class="card">
@@ -20,10 +29,10 @@
                       <div id="usrpic-container"><img src="/images/mypic.png" id="usr-pic"/></div>
                     </div>
                     <div class="header-inner">
-                      <h3 style="font-weight:500 ;">Посмак Никита Михайлович</h3>
+                      <h3 id="me" style="font-weight:500 ;">Посмак Никита Михайлович</h3>
                       <br/>
                         <ul id="contacts">
-                          <li><img src="/images/home.png "/> : г. Санкт-Петербург</li>
+                          <li><img src="/images/home.png "/><span id="address"> : Санкт-Петербург</span></li>
                           <li><img src="/images/mail.png" /> : nposmak@yandex.ru</li>
                           <li><img src="/images/github.png" /> : <a href="https://github.com/nposmak">https://github.com/nposmak</a></li>
                           <li><img src="/images/linkedin.png" /> : <a href="https://www.linkedin.com/in/nikita-posmak-b13948234/">LinkedIn</a></li>
@@ -32,59 +41,59 @@
                     </div>
                   </div>
                 <br>
-                <h4 style="font-weight:500 ;">Обо мне:</h4>
-                <p>Инженер-программист с опытом разработки и поддержки программного обеспечения для автоматизации бизнес процессов 
+                <h4 id="about-title" style="font-weight:500 ;">Обо мне:</h4>
+                <p id="about">Инженер-программист с опытом разработки и поддержки программного обеспечения для автоматизации бизнес процессов 
                     предприятия. Умею и знаю, что значит работать в команде. Всегда открыт для нового опыта и знаний.</p>
                 <br>
-                <h4 style="font-weight:500 ;">Ключевые навыки:</h4>
+                <h4 id="skills-title" style="font-weight:500 ;">Ключевые навыки:</h4>
                 <div class="row row-cols-auto">
-                  <div class="col" style="width: 10rem;">Навыки:</div>
+                  <div id="key-skills" class="col" style="width: 10rem;">Навыки:</div>
                   <div class="col-8">
                     <p><span class="badge">Java</span> <span class="badge">Spring Framework</span> <span class="badge">SpringBoot</span>
                       <span class="badge">Spring Data JPA</span> <span class="badge">Spring Security</span> <span class="badge">Hibernate</span>  
-                      <span class="badge">MVC</span> <span class="badge">REST</span> <span class="badge">Postgres</span> <span class="badge">Redis</span>
+                      <span class="badge">MVC</span> <span class="badge">REST</span> <span class="badge">PostgreSQL</span> <span class="badge"> MySQL</span> <span class="badge">Redis</span>
                       <span class="badge">Docker</span> <span class="badge">Maven</span> <span class="badge">Git</span>
                     </p>
                   </div>
                 </div>
                 <div class="row row-cols-auto">
-                  <div class="col" style="width: 10rem;">Языки:</div>
+                  <div  id="my-langs" class="col" style="width: 10rem;">Языки:</div>
                   <div class="col-8">
                       <ul id="charge-li">
-                        <li>Русский</li>
-                        <li>Английский (С1)</li>
+                        <li id="native">Русский</li>
+                        <li id="foreign">Английский (С1)</li>
                       </ul>
                   </div>
                 </div>
                 
                 <br>
-                <h4 style="font-weight:500 ;">Опыт работы:</h4>
+                <h4 id="experience-title" style="font-weight:500 ;">Опыт работы:</h4>
                 <div class="row row-cols-auto">
                     <div class="col" style="width: 10rem;">08.2021 - 10.2022</div>
                     <div class="col-8">
-                      <span style="font-weight:500 ;">Место работы:</span> ООО "Газпром трансгаз Ухта".<br>
-                      <span style="font-weight:500 ;">Должность:</span> младший инженер программист отдела программного обеспечения<br>
-                      <span style="font-weight:500 ;">Обязанности:</span><br>
+                      <span id="job-1" style="font-weight:500 ;">Место работы:</span><span id="org-name1"> ООО "Газпром трансгаз Ухта"</span><br>
+                      <span id="position-1" style="font-weight:500 ;">Должность:</span><span id="position-1-name"> младший инженер программист отдела программного обеспечения</span><br>
+                      <span id="duties-1" style="font-weight:500 ;">Обязанности:</span><br>
                       <ul id="charge-li">
-                        <li>Разработка api локальных информационно-управляющих систем, реализация бизнес логики (SpringBoot, JPA, Postgres);</li>
-                        <li>Поддержка существующего программного обеспечения;</li>
-                        <li>Модульное тестирование;</li>
-                        <li>Разработка интерфейсов;</li>
-                        <li>Составление документации на разработку локальных информационно-управляющих систем (ТЗ).</li>
+                        <li id="p1">Разработка локальных информационно-управляющих систем, реализация бизнес логики (Java 11, SpringBoot, Spring Data JPA, Spring Security, PostgreSQL, Redis, Vue2);</li>
+                        <li id="p2">Поддержка существующего программного обеспечения;</li>
+                        <li id="p3">Модульное тестирование;</li>
+                        <li id="p4">Разработка интерфейсов;</li>
+                        <li id="p5">Составление документации на разработку локальных информационно-управляющих систем (ТЗ).</li>
                       </ul>
                   </div>
                 <div class="row row-cols-auto">
                     <div class="col" style="width: 10rem;">09.2014 - 08.2021</div>
                     <div class="col-8">
-                      <span style="font-weight:500 ;">Место работы:</span> ООО "Газпром трансгаз Ухта".<br>
-                      <span style="font-weight:500 ;">Должность:</span> инженер 1 категории отдела автоматизированных систем управления технологическими процессами.<br>
-                      <span style="font-weight:500 ;">Обязанности:</span><br>
+                      <span id="job-2" style="font-weight:500 ;">Место работы:</span><span id="org-name2"> ООО "Газпром трансгаз Ухта"</span><br>
+                      <span id="position-2" style="font-weight:500 ;">Должность:</span><span id="position-2-name"> инженер 1 категории отдела АСУТП</span><br>
+                      <span id="duties-2" style="font-weight:500 ;">Обязанности:</span><br>
                       <ul id="charge-li">
-                        <li>Режимная наладка, испытания, техническое обслуживание и ремонт систем автоматического управления электромагнитным
+                        <li id="p6">Режимная наладка, испытания, техническое обслуживание и ремонт систем автоматического управления электромагнитным
                            подвесом (САУ ЭМП)
                            и смежных систем автоматизации;</li>
-                        <li>Программирование микроконтроллеров на закрытых встроенных языках;</li>
-                        <li>Составление документации по результатам испытаний систем (протоколы, отчеты), составление нормативно-технической 
+                        <li id="p7">Программирование микроконтроллеров на закрытых встроенных языках;</li>
+                        <li id="p8">Составление документации по результатам испытаний систем (протоколы, отчеты), составление нормативно-технической 
                           документации (технические регламенты, стандарты).</li>                      
                       </ul>
                     </div>
@@ -92,19 +101,19 @@
                   </div>
 
                 <br>
-                <h4 style="font-weight:500 ;">Образование:</h4>
+                <h4 id="education-title" style="font-weight:500 ;">Образование:</h4>
                 <div class="row row-cols-auto">
                   <div class="col" style="width: 10rem;">2012 - 2014</div>
                   <div class="col-8">
-                    <span style="font-weight:500 ;">Магистр - "Управление в технических ситемах"</span>
-                    <p>Санкт-Петербургский государственный электротехнический университет имени В.И.Ульянова (Ленина) "ЛЭТИ".
+                    <span id="education-degree" style="font-weight:500 ;">Магистр - "Управление в технических ситемах"</span>
+                    <p id="university">Санкт-Петербургский государственный электротехнический университет имени В.И.Ульянова (Ленина) "ЛЭТИ".
                       <br>Факультет компьютерных технологий и информатики.
                     </p>
                   </div>
                 </div>
 
                 <br>
-                <h4 style="font-weight:500 ;">Сертификаты и курсы:</h4>
+                <h4 id="courses" style="font-weight:500 ;">Сертификаты и курсы:</h4>
                 <div class="image_container">
                   <div class="side_view">
                     <img src="/images/security.jpg" onclick="change(this.src)">
@@ -128,4 +137,6 @@
       document.getElementById('main').src = src
   }
 </script> 
+<script  type="text/javascript" src="langscript.js"></script>
+
 
