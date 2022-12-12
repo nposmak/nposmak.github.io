@@ -139,7 +139,7 @@ let data = {
         aboutTitle: "About me:",
         about : "Software developer with strong technical background. Responsible, easy-going and open-minded person, \
         eager to learn something new and share getting knowledge with others.\
-        Looking for new challenges and opportunities outside Russia to get a new experience in the process\
+        Looking for new challenges and opportunities to get a new experience in the process\
         of developing new unique products.",
         skillsTitle: "Skills:",
         keySkills: "Key skills:",
